@@ -42,6 +42,7 @@ A website for the College of Engineering and Information Technology (CEIT) at Pa
 ```
     npm run dev
 ```
+
     - The website will run at http://localhost:5173, if it's already in use, just add one (1) e.g. http://localhost:5174
 
 ### :open_book: Contribution Guidelines
@@ -59,7 +60,11 @@ The developers behind this project is a team of four (4) students from the CEIT 
     - Use descriptive messages following this [reference](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13#conventional-commit-messages-), eg:
     ```
         feat(home): Added faculty profiles section
+    ```
+    ```
         fix(about): Resolved navigation bar issue
+    ```
+    ```
         chore: Updated dependencies
     ```
 
