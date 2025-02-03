@@ -46,16 +46,16 @@ A website for the College of Engineering and Information Technology (CEIT) at Pa
 
 ### :open_book: Contribution Guidelines
 
-The developmers behind this project is a team of four (4) students from the CEIT department of PLV. To ensure smooth collaboration, we follow these guidelines: 
-**1. Branches**
+The developers behind this project is a team of four (4) students from the CEIT department of PLV. To ensure smooth collaboration, we follow these guidelines: 
+1. **Branches**
     - main branch contains the stable version.
     - Create separate branches for new features or fixes e.g. feat/new-feature, fix/bug-name.
-**2. Issues && Pull Requests**
+2. **Issues && Pull Requests**
     - Open an Issue for new tasks or bug reports.
     - Work on a separate branch and submit a Pull Request (PR).
     - All PRs require approval before merging into main. 
     - Make sure there are little to no merge conflicts before merging into main.
-**3. Commit Message Guidelines**
+3. **Commit Message Guidelines**
     - Use descriptive messages following this [reference](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13#conventional-commit-messages-), eg:
     ```
         feat(home): Added faculty profiles section
