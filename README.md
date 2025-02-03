@@ -46,7 +46,7 @@ A website for the College of Engineering and Information Technology (CEIT) at Pa
 > [!NOTE]
 > The website will run at http://localhost:5173, if it's already in use, just add one (1) e.g. http://localhost:5174
 
-## ::sparkles: Features
+## :sparkles: Features
 
 The websites features are currently under discussion, but here are some:
 - Information about the CEIT department, its faculty members, facilities, and activities.
@@ -64,7 +64,7 @@ The developers behind this project is a team of four (4) students from the CEIT 
     - All PRs require approval before merging into main. 
     - Make sure there are little to no merge conflicts before merging into main.
 3. **Commit Message Guidelines**
-    - Use descriptive messages following this [reference](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13#conventional-commit-messages-), eg:
+    - Use descriptive messages following this [reference](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13#conventional-commit-messages-), eg: <br/>
 
     ```
         feat(home): Added faculty profiles section
@@ -84,7 +84,6 @@ This project is currently for internal use at Pamantasan ng Lungsod ng Valenzuel
 
 - Awaiting feedback for features.
 - Development of initial prototype design.
-
-
-
+<br/>
+<br/>
 :rocket: Developed by the CEIT Department at Pamantasan ng Lungsod ng Valenzuela (PLV)
