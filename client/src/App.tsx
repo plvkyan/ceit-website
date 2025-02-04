@@ -9,7 +9,7 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="home">Home</Link>
+            <Link to="home" className="text-blue underline">Home</Link>
           </li>
         </ul>
       </nav>

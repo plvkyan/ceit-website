@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Figtree', sans-serif;
+  font-size: 4.875rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: 'Figtree', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
