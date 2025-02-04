@@ -6,7 +6,7 @@ A website for the College of Engineering and Information Technology (CEIT) at Pa
 
 ## :bust_in_silhouette: Target Audience
 
-- CEIT faculty and staff
+- CEIT faculty
 - PLV students
 - Prospective students, especially those interested in CEIT programs
 
@@ -26,11 +26,11 @@ A website for the College of Engineering and Information Technology (CEIT) at Pa
 - NPM (included with Node.js)
 
 ### Steps
-1. Navigate to a folder where you want the repository to be located at and enter this to clone the repository:
+1. Navigate/CD to a folder where you want the repository to be located at and enter this in the terminal to clone the repository:
 ```
     git clone git@github.com:plvkyan/ceit-website.git
 ```
-2. Navigate to the client folder:
+2. Navigate/CD to the client folder:
 ```
     cd client
 ```
@@ -44,11 +44,11 @@ A website for the College of Engineering and Information Technology (CEIT) at Pa
 ```
 
 > [!NOTE]
-> The website will run at http://localhost:5173, if it's already in use, just add one (1) e.g. http://localhost:5174
+> The website will run at http://localhost:5173, if it's already in use, just add one (1) to the port e.g. http://localhost:5174
 
 ## :sparkles: Features
 
-The websites features are currently under discussion, but here are some:
+The website's features are currently under discussion, but here are some:
 - Information about the CEIT department, its faculty members, facilities, and activities.
 - Content Management System (CMS) for faculty to update information.
 
@@ -58,7 +58,7 @@ The developers behind this project is a team of four (4) students from the CEIT 
 1. **Branches**
     - main branch contains the stable version.
     - Create separate branches for new features or fixes e.g. feat/new-feature, fix/bug-name.
-2. **Issues && Pull Requests**
+2. **Issues & Pull Requests**
     - Open an Issue for new tasks or bug reports.
     - Work on a separate branch and submit a Pull Request (PR).
     - All PRs require approval before merging into main. 
