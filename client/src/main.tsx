@@ -4,7 +4,7 @@
 // Academics page import
 import Academics from '@/pages/Academics';
 // App page import
-import App from '@/App.tsx'
+// import App from '@/App.tsx'
 // Community page import
 import Community from '@/pages/Community';
 // Error404 page import
@@ -31,7 +31,7 @@ import { createRoot } from 'react-dom/client'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
     errorElement: <Error404 />,
   },
   {
