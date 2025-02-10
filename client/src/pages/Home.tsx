@@ -1,25 +1,33 @@
 // Imports
 
 // Component imports
-// Button component import
-import { Button } from "@/components/ui/button"
+// Hero component import
+// import Hero from "@/components/ui/hero"
 // Navigation bar component import
 import NavigationBar from "@/components/ui/navigation-bar"
+import Organizations from "@/components/ui/organizations";
 
 
 
 const Home = () => {
 
     return (
+
         <div>
+
+            {/* Navigation bar component */}
             <NavigationBar />
-            <h1> CEIT Student-Athlete Shines with Dual Gold Medals in the PLV 2022 Intramurals </h1>
-            <p> With her combination of athleticism, beauty, and intelligence, 
-                April Joy Yapcengco is not only a campus crush but also a 
-                role model for students across CEIT. 
-            </p>
-            <Button> Read more </Button>
+
+            {/* Hero section component */}
+            {/* <Hero /> */}
+            <div className="bg-white w-full h-[32rem]"></div>
+
+            {/* Organizations section component */}
+            <Organizations />
+
+            
         </div>
+
     )
 }
 
