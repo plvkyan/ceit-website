@@ -107,7 +107,7 @@ const NavigationBar = ({
     return (
 
         // The parent container for the navigation bar
-        <header className="flex py-4 px-8 justify-center">
+        <header className="sticky -top-1 z-50 flex py-4 px-8 justify-center bg-white border-b border-b-black/15">
 
             {/* The container for the navigation bar, the "container" class adjusts automatically depending on the current breakpoint */}
             <div className="container">
