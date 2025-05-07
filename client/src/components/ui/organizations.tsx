@@ -45,7 +45,7 @@ const Organizations = ({
 
     return (
 
-        <section className="flex flex-col items-center justify-center py-20 lg:py-32">
+        <section className="flex flex-col items-center justify-center py-24 lg:py-30">
 
             <div className="container flex flex-col items-center justify-center text-center px-8">
 
