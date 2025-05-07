@@ -1,6 +1,12 @@
 // Imports
 
+// Lucide Icon imports
+import { ArrowRight } from "lucide-react"
+
 // Component Imports
+// Button component imports
+import { Button } from "@/components/ui/button"
+
 // Carousel component imports
 import {
     Carousel,
@@ -14,8 +20,6 @@ import {
 // Utility imports
 // Autoplay embla carousel import
 import Autoplay from "embla-carousel-autoplay"
-import { Button } from "./button"
-import { ArrowRight } from "lucide-react"
 
 
 
