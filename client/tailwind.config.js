@@ -28,6 +28,10 @@ export default {
 				DEFAULT: 'hsl(var(--plv-blue))',
 				foreground: 'hsl(var(--plv-blue-foreground))'
 			},
+			dirtywhite: {
+				DEFAULT: 'hsl(var(--dirty-white))',
+				foreground: 'hsl(var(--dirty-white-foreground))'
+			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
   				foreground: 'hsl(var(--secondary-foreground))'
