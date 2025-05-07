@@ -29,6 +29,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import SignUp from './pages/Signup';
 
 
 
@@ -81,6 +82,27 @@ const router = createBrowserRouter([
       googleText="Log in with Google"
       signupText="Don't have an account?"
       signupUrl="/signup"
+    />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp
+      heading="Sign up"
+      subheading='Welcome! Please enter your details to create an account.'
+      mainLogo={{
+        url: "#",
+        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739660442/PLV_LOGO_dhgdie.png",
+        alt: "PLV Logo",
+      }}
+      secondaryLogo={{
+        url: "#",
+        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739103934/CEIT_Logo_Edited_vjsgyu.png",
+        alt: "PLV CEIT Logo",
+      }}
+      signupText="Sign up"
+      googleText="Sign up with Google"
+      loginText="Already have an account?"
+      loginUrl="/login"
     />,
   },
 ]);
