@@ -100,7 +100,7 @@ const NavigationBar = ({
     // The call to action section of the navigation bar to the right
     callToAction: auth = {
         primaryAction: { text: "Log in", url: "/login" },
-        secondaryAction: { text: "Sign up", url: "#" },
+        secondaryAction: { text: "Sign up", url: "/signup" },
     },
 }: NavbarProps) => {
 
