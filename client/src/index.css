@@ -29,7 +29,8 @@ h2 {
     /* --primary: 222.2 47.4% 11.2%; */ /* Old primary color */
     --primary: 19 100% 54%; /* New primary color – Kimchi orange */
     --primary-foreground: 210 40% 98%;
-    --plv-blue: 218, 77%, 18%;
+    --plv-blue: 218 77% 18%;
+    --dirty-white: 278 100% 98%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
