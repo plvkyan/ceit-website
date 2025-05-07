@@ -13,6 +13,8 @@ import Error404 from '@/pages/Error404';
 import Facilities from '@/pages/Facilities';
 // Home page import
 import Home from '@/pages/Home.tsx'
+// Login page import
+import Login from '@/pages/Login';
 // News page import
 import News from '@/pages/News';
 // Students page import
@@ -27,6 +29,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+
+
 
 const router = createBrowserRouter([
   {
@@ -57,6 +61,27 @@ const router = createBrowserRouter([
   {
     path: "/news",
     element: <News />,
+  },
+  {
+    path: "/login",
+    element: <Login
+      heading="Log in"
+      subheading='Welcome back! Please enter your details to log in.'
+      mainLogo={{
+        url: "#",
+        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739660442/PLV_LOGO_dhgdie.png",
+        alt: "PLV Logo",
+      }}
+      secondaryLogo={{
+        url: "#",
+        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739103934/CEIT_Logo_Edited_vjsgyu.png",
+        alt: "PLV CEIT Logo",
+      }}
+      loginText="Log in"
+      googleText="Log in with Google"
+      signupText="Don't have an account?"
+      signupUrl="/signup"
+    />,
   },
 ]);
 
