@@ -29,7 +29,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import SignUp from './pages/Signup';
+import SignUp from './pages/SignUp';
+import ForgotPassword from './pages/ForgotPassword';
 
 
 
@@ -102,6 +103,27 @@ const router = createBrowserRouter([
       signupText="Sign up"
       googleText="Sign up with Google"
       loginText="Already have an account?"
+      loginUrl="/login"
+    />,
+  },
+  {
+    path: "/forgot",
+    element: <ForgotPassword
+      heading="Forgot your password?"
+      subheading='Enter your email address and we will send you a link to reset your password.'
+      mainLogo={{
+        url: "#",
+        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739660442/PLV_LOGO_dhgdie.png",
+        alt: "PLV Logo",
+      }}
+      secondaryLogo={{
+        url: "#",
+        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739103934/CEIT_Logo_Edited_vjsgyu.png",
+        alt: "PLV CEIT Logo",
+      }}
+      forgotPasswordText="Reset password"
+      loginText="Back to login"
+      googleText="Sign up with Google"
       loginUrl="/login"
     />,
   },
