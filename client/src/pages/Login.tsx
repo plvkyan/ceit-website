@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 // import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { useEffect } from "react";
 
 interface LoginProps {
   heading?: string;
@@ -34,6 +35,13 @@ const Login = ({
   signupText,
   signupUrl,
 }: LoginProps) => {
+
+  // Effects
+  // Effect for changing page title
+  useEffect(() => {
+    document.title = "Log in | PLV CEIT" ;
+  });
+
   return (
     <section className="py-32">
       <div className="">
@@ -69,7 +77,7 @@ const Login = ({
 
                   <div className="flex justify-between items-center">
                     <Label> Password </Label>
-                    <a href="#" className="text-end text-sm text-primary hover:underline">
+                    <a href="/forgot" className="text-end text-sm text-primary hover:underline">
                       Forgot password
                     </a>
                   </div>

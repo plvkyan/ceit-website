@@ -1,24 +1,27 @@
 // Imports
 
 // Component imports
-// Button component import
-import { Button } from "@/components/ui/button"
+// Footer component import
+import Footer from "@/components/ui/footer";
+// Navigation bar component import
+import NavigationBar from "@/components/ui/navigation-bar";
 
-// Utiility imports
-// React Router imports
-// Link import
-import { Link } from "react-router-dom";
+// Utility imports
 
-// Page
+
+// Students page component
 const Students = () => {
 
     return (
-        <div>
-            <h1> This is the Students page! </h1>
-            <p> We don't have content for the Students page yet, not even a mockup. This is just for route testing.
-            </p>
-            <Link to="/home"> <Button> Back to Home? </Button> </Link>
-        </div>
+        <>
+            {/* Navigation bar component */}
+            <NavigationBar />
+
+            <div className="bg-white w-full h-[8rem]"></div>
+
+            {/* Footer component */}
+            <Footer />
+        </>
     )
 }
 
