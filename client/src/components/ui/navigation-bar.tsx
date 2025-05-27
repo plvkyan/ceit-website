@@ -88,8 +88,8 @@ const NavigationBar = ({
         { title: "Home", url: "/home" },
         { title: "Academics", url: "/academics" },
         { title: "Students", url: "/students" },
-        { title: "Community", url: "/community" },
-        { title: "Facilities", url: "/facilities" },
+        // { title: "Community", url: "/community" },
+        // { title: "Facilities", url: "/facilities" },
         { title: "News", url: "/news" },
     ],
 
