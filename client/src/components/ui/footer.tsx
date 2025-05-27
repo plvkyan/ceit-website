@@ -139,12 +139,12 @@ const Footer = () => {
 
             </div>
 
-            <div className="absolute z-10 left-36 sm:left-36 md:left-48 lg:left-64 top-0 w-full h-full bg-gradient-to-r from-[#162B60] from-30%"></div>
+            <div className="absolute z-10 left-12 sm:left-36 md:left-36 lg:left-64 top-0 w-full h-full bg-gradient-to-r from-[#162B60] from-15%"></div>
 
             <img
-                src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748243518/PLV-CEIT-Website-Footer-Image_ectjie.jpg"
+                src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748349180/PLV-CEIT-Website-Footer-Image-Colored_tljret.png"
                 alt="Pamantasan ng Lungsod ng Valenzuela Maysan Campus"
-                className="absolute left-36 sm:left-36 md:left-48 lg:left-64 overflow-hidden object-cover w-full h-full"
+                className="absolute left-12 sm:left-36 md:left-36 lg:left-64 overflow-hidden object-cover w-full h-full"
             />
 
         </section>
