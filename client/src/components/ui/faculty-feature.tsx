@@ -25,15 +25,15 @@ interface FacultyFeatureProps {
 const FacultyFeature = ({
     badge = "Meet the Dean",
     heading = "Engr. Jordan Velasco",
-    description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id aliquam justo, et commodo magna. Cras eget dapibus lacus. Cras nibh risus, suscipit sed dictum id, finibus fringilla tortor.",
+    description = "Under his guidance, the College continues to uphold its mission of producing future-ready engineers and IT professionals who are equipped to meet the evolving demands of society and industry.",
     buttons = {
         secondary: {
-            text: "Read more",
+            text: "Meet the school officials",
             url: "https://www.ui.shadcn.com",
         },
     },
     image = {
-        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739240710/man-back_angle_hjb9yu.png",
+        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1748378470/Engr-Jordan-N-Velasco_Dean-College-of-Engineering-and-Information-Technology_dfsqeu.jpg",
         alt: "",
     },
 }: FacultyFeatureProps) => {
@@ -51,7 +51,7 @@ const FacultyFeature = ({
                         <img
                             src={image.src}
                             alt={image.alt}
-                            className="max-h-96 w-full rounded-md object-cover"
+                            className="max-h-96 h-[720px] w-full rounded-md object-cover object-[85%_15%]"
                         />
 
                     </div>
