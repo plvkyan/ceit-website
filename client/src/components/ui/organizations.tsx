@@ -26,18 +26,18 @@ interface OrganizationsProps {
 const Organizations = ({
     heading = "College of Engineering and Information Technology",
     subheading,
-    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
+    description = "Our college offers Civil Engineering, Electrical Engineering, and Information Technology programs. Each program is supported by a dedicated student organization:",
     orgs = [
         {
-            name: "Civil Engineering",
+            name: "Association of Civil Engineering Students",
             logo: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739194746/CE_Logo_hrr17n.png",
         },
         {
-            name: "Electrical Engineering",
+            name: "Association of Electrical Engineering Students",
             logo: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739194746/EE_Logo_fizibg.png",
         },
         {
-            name: "Information Technology",
+            name: "Valenzuela Information Technology Society",
             logo: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739194746/VITS_Logo_zphbtg.png",
         },
     ],
@@ -55,11 +55,13 @@ const Organizations = ({
                     </p>
                 }
 
+                <img src="https://res.cloudinary.com/dmodbgukj/image/upload/v1739103934/CEIT_Logo_Edited_vjsgyu.png" className="size-20 mb-6 lg:size-24" alt="" />
+
                 <h2 className="my-6 text-primary text-pretty text-2xl font-bold lg:text-4xl">
                     {heading}
                 </h2>
 
-                <p className="mb-8 max-w-3xl text-muted-foreground lg:text-xl">
+                <p className="mb-8 max-w-4xl text-muted-foreground lg:text-xl">
                     {description}
                 </p>
 
