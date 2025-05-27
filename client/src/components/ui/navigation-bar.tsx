@@ -136,7 +136,7 @@ const NavigationBar = ({
                     </div>
 
                     {/* Call to action section–I set it to login and sign up for now */}
-                    <div className="flex gap-2 items-center">
+                    {/* <div className="flex gap-2 items-center">
 
                         <Button asChild variant="outline" size="default">
                             <Link to={auth.primaryAction.url}>{auth.primaryAction.text}</Link>
@@ -146,7 +146,7 @@ const NavigationBar = ({
                             <Link to={auth.secondaryAction.url}>{auth.secondaryAction.text}</Link>
                         </Button>
 
-                    </div>
+                    </div> */}
 
                 </nav>
 
@@ -213,7 +213,7 @@ const NavigationBar = ({
                                     </div> */}
 
                                     {/* Call to action section in mobile */}
-                                    <div className="flex flex-col gap-3">
+                                    {/* <div className="flex flex-col gap-3">
 
                                         <Button asChild variant="outline">
                                             <Link to={auth.primaryAction.url}>{auth.primaryAction.text}</Link>
@@ -223,7 +223,7 @@ const NavigationBar = ({
                                             <Link to={auth.secondaryAction.url}>{auth.secondaryAction.text}</Link>
                                         </Button>
 
-                                    </div>
+                                    </div> */}
 
                                 </div>
 
