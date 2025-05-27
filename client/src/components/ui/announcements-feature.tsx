@@ -14,7 +14,7 @@ interface AnnouncementsFeatureProps {
 }
 
 const AnnouncementsFeature = ({
-  heading = "Announcements",
+  heading = "News",
   features = [
     {
       title: "Faculty evaluation by students is now available",
@@ -79,7 +79,7 @@ const AnnouncementsFeature = ({
 
         <div className="flex flex-col items-end gap-6">
           <Button variant="ghost" className="font-bold text-primary uppercase hover:bg-muted/50 hover:text-primary">
-            View all announcements
+            View all news
             <ArrowRight />
           </Button>
         </div>

@@ -27,11 +27,22 @@ import '@/index.css'
 // React Router imports
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+// Context imports
+// Import AppContextProvider from AppContext.tsx
+import { AppContextProvider } from '@/contexts/AppContext';
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgotPassword';
+import { Toaster } from "@/components/ui/sonner"
+import Dashboard from './pages/Dashboard';
+import NewsPage from './components/ui/news-page';
+import CreateNews from './pages/CreateNews';
+import EmailVerification from './pages/EmailVerification';
+import Sample from './pages/Sample';
 
+import { TooltipProvider } from "@/components/ui/tooltip"
 
 
 const router = createBrowserRouter([
@@ -65,72 +76,46 @@ const router = createBrowserRouter([
     element: <News />,
   },
   {
+    path: "/news/:id",
+    element: <NewsPage />,
+  },
+  {
     path: "/login",
-    element: <Login
-      heading="Log in"
-      subheading='Welcome back! Please enter your details to log in.'
-      mainLogo={{
-        url: "#",
-        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739660442/PLV_LOGO_dhgdie.png",
-        alt: "PLV Logo",
-      }}
-      secondaryLogo={{
-        url: "#",
-        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739103934/CEIT_Logo_Edited_vjsgyu.png",
-        alt: "PLV CEIT Logo",
-      }}
-      loginText="Log in"
-      googleText="Log in with Google"
-      signupText="Don't have an account?"
-      signupUrl="/signup"
-    />,
+    element: <Login />,
   },
   {
     path: "/signup",
-    element: <SignUp
-      heading="Sign up"
-      subheading='Welcome! Please enter your details to create an account.'
-      mainLogo={{
-        url: "#",
-        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739660442/PLV_LOGO_dhgdie.png",
-        alt: "PLV Logo",
-      }}
-      secondaryLogo={{
-        url: "#",
-        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739103934/CEIT_Logo_Edited_vjsgyu.png",
-        alt: "PLV CEIT Logo",
-      }}
-      signupText="Sign up"
-      googleText="Sign up with Google"
-      loginText="Already have an account?"
-      loginUrl="/login"
-    />,
+    element: <SignUp />,
   },
   {
     path: "/forgot",
-    element: <ForgotPassword
-      heading="Forgot your password?"
-      subheading='Enter your email address and we will send you a link to reset your password.'
-      mainLogo={{
-        url: "#",
-        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739660442/PLV_LOGO_dhgdie.png",
-        alt: "PLV Logo",
-      }}
-      secondaryLogo={{
-        url: "#",
-        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739103934/CEIT_Logo_Edited_vjsgyu.png",
-        alt: "PLV CEIT Logo",
-      }}
-      forgotPasswordText="Reset password"
-      loginText="Back to login"
-      googleText="Sign up with Google"
-      loginUrl="/login"
-    />,
+    element: <ForgotPassword />,
+  },
+  {
+    path: "/email-verification",
+    element: <EmailVerification />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+  },
+  {
+    path: "/create-news",
+    element: <CreateNews  />,
+  },
+  {
+    path: "/sample",
+    element: <Sample />,
   },
 ]);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <TooltipProvider>
+    <AppContextProvider>
+      <RouterProvider router={router} />
+      <Toaster />
+    </AppContextProvider>
+    </TooltipProvider>
   </StrictMode>,
 )

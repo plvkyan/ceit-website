@@ -1,131 +1,154 @@
+
+
+
+// Imports
+// Utility imports
+// react-router-dom imports
 import { Link } from "react-router-dom";
 
-interface MenuItem {
-    title: string;
-    links: {
-        text: string;
-        url: string;
-    }[];
-}
 
-interface FooterProps {
-    primaryLogo?: {
-        url: string;
-        src: string;
-        alt: string;
-        title: string;
-    };
-    secondaryLogo?: {
-        url: string;
-        src: string;
-        alt: string;
-        title: string;
-    };
-    tagline?: string;
-    menuItems?: MenuItem[];
-    copyright?: string;
-    bottomLinks?: {
-        text: string;
-        url: string;
-    }[];
-}
 
-const Footer = ({
-    primaryLogo = {
-        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739660442/PLV_LOGO_dhgdie.png",
-        alt: "Pamantasan ng Lungsod ng Valenzuela Logo",
-        title: "Pamantasan ng Lungsod ng Valenzuela",
-        url: "/home",
-    },
-    secondaryLogo = {
-        src: "https://res.cloudinary.com/dmodbgukj/image/upload/v1739103934/CEIT_Logo_Edited_vjsgyu.png",
-        alt: "College of Engineering and Information Technology Logo",
-        title: "College of Engineering and Information Technology",
-        url: "/home",
-    },
-    menuItems = [
-        {
-            title: "Quick Links",
-            links: [
-                { text: "About Civil Engineering", url: "#" },
-                { text: "About Electrical Engineering", url: "#" },
-                { text: "About Information Technology", url: "#" },
-            ],
-        },
-        {
-            title: "Follow Us",
-            links: [
-                { text: "Facebook", url: "#" },
-                { text: "Instagram", url: "#" },
-                { text: "LinkedIn", url: "#" },
-            ],
-        },
-    ],
-    copyright = "© 2025 Copyright. All rights reserved.",
-    bottomLinks = [
-        { text: "Terms and Conditions", url: "#" },
-        { text: "Privacy Policy", url: "#" },
-    ],
-}: FooterProps) => {
+
+
+const Footer = () => {
+
+
+
     return (
-        <section className="flex py-32 px-8 items-center justify-center">
-            <div className="container">
+
+        // Footer section
+        <section className="relative flex overflow-hidden py-16 px-8 items-center justify-center bg-plvblue text-white border-t border-plvbluedark border-t-[12px]">
+
+            {/* Container for the footer content */}
+            <div className="container z-20">
+
+                {/* Footer content */}
                 <footer>
+
+                    {/* Grid layout for footer sections */}
                     <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
+
+                        {/* University logos' container */}
                         <div className="col-span-2 flex flex-col gap-6 mb-8 lg:mb-0">
+
+                            {/* Pamantasan ng Lungsod ng Valenzuela Logo */}
                             <div className="flex flex-col text-center sm:text-start sm:flex-row items-center justify gap-6">
+                                {/* Logo link to home page */}
                                 <Link to="/home">
+                                    {/* Logo image source */}
                                     <img
-                                        src={primaryLogo.src}
-                                        alt={primaryLogo.alt}
-                                        title={primaryLogo.title}
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1739660442/PLV_LOGO_dhgdie.png"
+                                        alt="Pamantasan ng Lungsod ng Valenzuela Logo"
+                                        title="Pamantasan ng Lungsod ng Valenzuela"
                                         className="aspect-square max-w-16"
                                     />
                                 </Link>
-                                <p className="text-xl font-semibold">{primaryLogo.title}</p>
+
+                                {/* Logo label */}
+                                <p className="text-xl font-semibold"> Pamantasan ng Lungsod ng Valenzuela </p>
                             </div>
+
+                            {/* Pamantasan ng Lungsod ng Valenzuela - College of Engineering and Information Technology Logo */}
                             <div className="flex flex-col text-center sm:text-start sm:flex-row items-center justify gap-6">
+                                {/* Logo link to home page */}
                                 <Link to="/home">
+                                    {/* Logo image source */}
                                     <img
-                                        src={secondaryLogo.src}
-                                        alt={secondaryLogo.alt}
-                                        title={secondaryLogo.title}
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1739103934/CEIT_Logo_Edited_vjsgyu.png"
+                                        alt="Pamantasan ng Lungsod ng Valenzuela - College of Engineering and Information Technology Logo"
+                                        title="College of Engineering and Information Technology"
                                         className="aspect-square max-w-16"
                                     />
                                 </Link>
-                                <p className="text-xl font-semibold">{secondaryLogo.title}</p>
+
+                                {/* Logo label */}
+                                <p className="text-xl font-semibold"> College of Engineering and Information Technology </p>
                             </div>
+
                         </div>
-                        <div className="hidden lg:flex md:col-span-1"></div>
-                        {menuItems.map((section, sectionIdx) => (
-                            <div key={sectionIdx}>
-                                <h3 className="mb-4 font-bold uppercase">{section.title}</h3>
-                                <ul className="space-y-4 text-muted-foreground">
-                                    {section.links.map((link, linkIdx) => (
-                                        <li
-                                            key={linkIdx}
-                                            className="font-medium transition-colors hover:underline hover:text-primary"
-                                        >
-                                            <Link to={link.url}>{link.text}</Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="mt-24 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium text-muted-foreground md:flex-row md:items-center">
-                        <p>{copyright}</p>
-                        <ul className="flex gap-4">
-                            {bottomLinks.map((link, linkIdx) => (
-                                <li key={linkIdx} className="underline transition-colors hover:text-primary">
-                                    <Link to={link.url}>{link.text}</Link>
+
+
+
+                        {/* Links container */}
+                        <div className="hidden lg:flex md:col-span-1" />
+
+                        {/* Quick links */}
+                        <div className="">
+
+                            <h3 className="mb-4 font-bold uppercase"> Quick Links </h3>
+
+                            <ul className="space-y-4">
+                                <li className="font-medium transition-colors hover:underline">
+                                    <Link to="#">About Civil Engineering</Link>
                                 </li>
-                            ))}
-                        </ul>
+
+                                <li className="font-medium transition-colors hover:underline">
+                                    <Link to="#">About Electrical Engineering</Link>
+                                </li>
+
+                                <li className="font-medium transition-colors hover:underline">
+                                    <Link to="#">About Information Technology</Link>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        {/* Follow us links */}
+                        <div className="">
+
+                            <h3 className="mb-4 font-bold uppercase"> Follow Us </h3>
+
+                            <ul className="space-y-4">
+                                <li className="font-medium transition-colors hover:underline">
+                                    <Link to="#">Facebook</Link>
+                                </li>
+
+                                <li className="font-medium transition-colors hover:underline">
+                                    <Link to="#">Instagram</Link>
+                                </li>
+
+                                <li className="font-medium transition-colors hover:underline">
+                                    <Link to="#">LinkedIn</Link>
+                                </li>
+                            </ul>
+
+                        </div>
+
                     </div>
+
+                    {/* Bottom links and copyright section */}
+                    <div className="mt-24 flex flex-col justify-between gap-4 border-t pt-8 text-sm font-medium md:flex-row md:items-center">
+
+                        {/* Copyright */}
+                        <p> © 2025 Copyright. All rights reserved. </p>
+
+                        {/* Bottom links */}
+                        <ul className="flex gap-4">
+                            <li className="underline transition-colors">
+                                <Link to="#">Terms and Conditions</Link>
+                            </li>
+
+                            <li className="underline transition-colors">
+                                <Link to="#">Privacy Policy</Link>
+                            </li>
+                        </ul>
+
+                    </div>
+
                 </footer>
+
             </div>
+
+            <div className="absolute z-10 left-36 sm:left-36 md:left-48 lg:left-64 top-0 w-full h-full bg-gradient-to-r from-[#162B60] from-30%"></div>
+
+            <img
+                src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748243518/PLV-CEIT-Website-Footer-Image_ectjie.jpg"
+                alt="Pamantasan ng Lungsod ng Valenzuela Maysan Campus"
+                className="absolute left-36 sm:left-36 md:left-48 lg:left-64 overflow-hidden object-cover w-full h-full"
+            />
+
         </section>
+
     );
 };
 

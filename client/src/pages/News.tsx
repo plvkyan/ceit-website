@@ -5,6 +5,7 @@
 import Footer from "@/components/ui/footer";
 // Navigation bar component import
 import NavigationBar from "@/components/ui/navigation-bar";
+// News hero section component import
 import NewsHero from "@/components/ui/news-hero";
 
 // Utiility imports
