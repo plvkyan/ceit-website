@@ -64,21 +64,22 @@ const Hero = () => {
                             <div className="relative flex w-full items-center justify-center">
                                 <div className="flex absolute items-center justify-center top-0 left-4 ms-auto me-auto w-full h-full z-50 bg-plvblue/60">
                                     <div className="container mt-32 md:mt-56 flex flex-col gap-4 w-[100%] px-16">
-                                        <h1 className="uppercase text-white drop-shadow-lg text-2xl text-wrap md:text-pretty md:text-4xl lg:text-7xl">
-                                            Latest Activity Headline 1
+                                        <h1 className="z-10 uppercase line-clamp-3 text-white drop-shadow-lg text-2xl md:text-pretty md:text-4xl lg:text-5xl">
+                                            April Joy Yapcengco Ends Her Run with Grace, Grit, and Glory.
                                         </h1>
-                                        <p className="mb-4 truncate md:text-pretty text-white drop-shadow-lg">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        <p className="z-10 mb-4 line-clamp-2 md:text-pretty text-white drop-shadow-lg">
+                                            The Pamantasan ng Lungsod ng Valenzuela's courts bids a triumphant and emotional farewell to one of its most iconic athletes—April Joy Yapcengco.
                                         </p>
-                                        <Button className="w-fit px-8 py-4 bg-transparent uppercase text-white border-2 border-white rounded-full" variant="outline">
+                                        <Button size="default" className="z-10 w-fit px-8 py-4 bg-transparent uppercase text-white border-2 border-white rounded-full" variant="outline">
                                             Read more 
                                             <ArrowRight />
                                         </Button>
+                                        <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-t from-[#162B60]" />
                                     </div>
                                 </div>
                                 <img
                                     className="w-full min-h-[400px] max-h-[600px] object-cover"
-                                    src="https://res.cloudinary.com/dmodbgukj/image/upload/v1739648280/IT_Event_nbjc6w.png"
+                                    src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748381950/Yapcengco_PLV-Intramurals-2023-Championship_q9jjld.jpg"
                                 />
                             </div>
                         </CarouselItem>
@@ -86,21 +87,22 @@ const Hero = () => {
                             <div className="relative flex w-full items-center justify-center">
                                 <div className="flex absolute items-center justify-center top-0 left-4 ms-auto me-auto w-full h-full z-50 bg-plvblue/60">
                                     <div className="container mt-32 md:mt-56 flex flex-col gap-4 w-[100%] px-16">
-                                        <h1 className="uppercase text-white drop-shadow-lg text-2xl text-wrap md:text-pretty md:text-4xl lg:text-7xl">
-                                            Latest Activity Headline 2
+                                        <h1 className="z-10 uppercase text-white line-clamp-2 drop-shadow-lg text-2xl md:text-pretty md:text-4xl lg:text-5xl">
+                                            CEIT Shines Bright at PLV Intramurals 2025
                                         </h1>
-                                        <p className="mb-4 truncate md:text-pretty text-white drop-shadow-lg">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        <p className="z-10 mb-4 line-clamp-2 md:text-pretty text-white drop-shadow-lg">
+                                            The PLV Intramurals 2025 officially wrapped up last April 21, bringing weeks of excitement, camaraderie, and competitive spirit across various sports.
                                         </p>
-                                        <Button className="w-fit px-8 py-4 bg-transparent uppercase text-white border-2 border-white rounded-full" variant="outline">
+                                        <Button className="z-10 w-fit px-8 py-4 bg-transparent uppercase text-white border-2 border-white rounded-full" variant="outline">
                                             Read more 
                                             <ArrowRight />
                                         </Button>
+                                        <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-t from-[#162B60]" />
                                     </div>
                                 </div>
                                 <img
                                     className="w-full min-h-[400px] max-h-[600px] object-cover"
-                                    src="https://res.cloudinary.com/dmodbgukj/image/upload/v1739648280/IT_Event_nbjc6w.png"
+                                    src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748382870/PLV_Intramurals-Publication-Material_al8rd7.jpg"
                                 />
                             </div>
                         </CarouselItem>
@@ -108,21 +110,22 @@ const Hero = () => {
                             <div className="relative flex w-full items-center justify-center">
                                 <div className="flex absolute items-center justify-center top-0 left-4 ms-auto me-auto w-full h-full z-50 bg-plvblue/60">
                                     <div className="container mt-32 md:mt-56 flex flex-col gap-4 w-[100%] px-16">
-                                        <h1 className="uppercase text-white drop-shadow-lg text-2xl text-wrap md:text-pretty md:text-4xl lg:text-7xl">
-                                            Latest Activity Headline 3
+                                        <h1 className="z-10 uppercase text-white line-clamp-2 drop-shadow-lg text-2xl md:text-pretty md:text-4xl lg:text-5xl">
+                                            PLV CEIT Celebrates New Civil Engineer Board Passers
                                         </h1>
-                                        <p className="mb-4 truncate md:text-pretty text-white drop-shadow-lg">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        <p className="z-10 mb-4 line-clamp-2 md:text-pretty text-white drop-shadow-lg">
+                                            The College of Engineering and Information Technology proudly celebrates the success of its recent Civil Engineering graduates who passed the April 2025 Civil Engineering Licensure Examination.
                                         </p>
-                                        <Button className="w-fit px-8 py-4 bg-transparent uppercase text-white border-2 border-white rounded-full" variant="outline">
+                                        <Button className="z-10 w-fit px-8 py-4 bg-transparent uppercase text-white border-2 border-white rounded-full" variant="outline">
                                             Read more 
                                             <ArrowRight />
                                         </Button>
+                                        <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-t from-[#162B60]" />
                                     </div>
                                 </div>
                                 <img
-                                    className="w-full min-h-[400px] max-h-[600px] object-cover"
-                                    src="https://res.cloudinary.com/dmodbgukj/image/upload/v1739648280/IT_Event_nbjc6w.png"
+                                    className="w-full min-h-[400px] max-h-[600px] object-cover object-[35%_75%]"
+                                    src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748383089/PLV_Civil-Engineer-Licensure-Examination_otzpjx.jpg"
                                 />
                             </div>
                         </CarouselItem>
