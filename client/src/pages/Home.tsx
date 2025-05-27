@@ -19,7 +19,7 @@ const Home = () => {
     // Effects
     // Effect for changing page title
     useEffect(() => {
-        document.title = "Home | Pamantasans ng Lungsod ng Valenzuela - College of Engineering and Information Technology";
+        document.title = "Home | Pamantasan ng Lungsod ng Valenzuela - College of Engineering and Information Technology";
     }, []);
 
     return (
