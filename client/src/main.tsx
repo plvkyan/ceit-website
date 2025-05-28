@@ -37,7 +37,7 @@ import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgotPassword';
 import { Toaster } from "@/components/ui/sonner"
 import Dashboard from './pages/Dashboard';
-import NewsPage from './components/ui/news-page';
+import NewsPage1 from './components/ui/news-page';
 import CreateNews from './pages/CreateNews';
 import EmailVerification from './pages/EmailVerification';
 import Sample from './pages/Sample';
@@ -76,8 +76,9 @@ const router = createBrowserRouter([
     element: <News />,
   },
   {
-    path: "/news/:id",
-    element: <NewsPage />,
+    path: "/news/april-joy-yapcengco-ends-her-run-with-grace-grit-and-glory",
+    // This is a specific news page, you can add more as needed
+    element: <NewsPage1 />,
   },
   {
     path: "/login",

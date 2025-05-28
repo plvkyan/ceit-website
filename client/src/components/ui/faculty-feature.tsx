@@ -29,7 +29,7 @@ const FacultyFeature = ({
     buttons = {
         secondary: {
             text: "Meet the school officials",
-            url: "https://www.ui.shadcn.com",
+            url: "/academics",
         },
     },
     image = {
