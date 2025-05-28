@@ -211,12 +211,12 @@ const Academics = () => {
                             </div>
 
                             <div className="order-2 md:order-1">
-                                <div className="relative h-[400px] max-h-[400px] rounded-lg overflow-hidden">
+                                <div className="relative max-h-[400px] rounded-lg overflow-hidden">
                                     <img
-                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748393867/IT_Documentation_dz7541.jpg"
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748407257/IT_Documentation-1_ntq7v5.png"
                                         alt="IT students collaborating on a software development project"
 
-                                        className="h-[400px] object-cover object-left-top"
+                                        className="object-cover"
                                     />
                                 </div>
                             </div>
@@ -349,8 +349,8 @@ const Academics = () => {
 
                 <section className="py-16 pb-24 container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-slate-900 mb-4">College Leadership</h2>
-                        <p className="text-slate-600 max-w-2xl mx-auto">
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">School Officials</h2>
+                        <p className="text-slate-600 max-w-3xl mx-auto">
                             Meet the dedicated leaders who guide our College of Engineering and Information Technology.
                         </p>
                     </div>
