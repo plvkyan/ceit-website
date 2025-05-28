@@ -14,7 +14,8 @@ import {
   useEffect,
   useState
 } from "react"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 
 
@@ -30,7 +31,7 @@ const NewsHero = () => {
   // Effects
   useEffect(() => {
     // Add any side effects or cleanup logic here
-    document.title = "News | PLV";
+    document.title = "News | Pamantasan ng Lungsod ng Valenzuela - College of Engineering and Information Technology";
 
     // Fetch news from the API
     const fetchNews = async () => {
@@ -75,7 +76,7 @@ const NewsHero = () => {
       <div className="">
         <div className="border border-t-0 border-border">
           <Link
-            to="/news/12349"
+            to="/news/april-joy-yapcengco-ends-her-run-with-grace-grit-and-glory"
             className="group grid gap-4 overflow-hidden px-6 transition-colors duration-500 ease-out hover:bg-muted/40 lg:grid-cols-2 xl:px-28"
           >
             <div className="flex flex-col justify-between gap-4 pt-8 md:pt-16 lg:pb-16">

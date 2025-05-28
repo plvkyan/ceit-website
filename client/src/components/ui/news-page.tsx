@@ -78,7 +78,7 @@ const NewsPage1 = () => {
 
             <NavigationBar />
 
-            <div className="container mx-auto px-4 py-8">
+            <div className="container max-w-[1080px] mx-auto px-4 py-8">
 
                 <Breadcrumb>
                     <BreadcrumbList>
