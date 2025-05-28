@@ -79,15 +79,19 @@ const Footer = () => {
 
                             <ul className="space-y-4">
                                 <li className="font-medium transition-colors hover:underline">
-                                    <Link to="#">About Civil Engineering</Link>
+                                    <Link to="/home">Home</Link>
                                 </li>
 
                                 <li className="font-medium transition-colors hover:underline">
-                                    <Link to="#">About Electrical Engineering</Link>
+                                    <Link to="/academics">Academics</Link>
                                 </li>
 
                                 <li className="font-medium transition-colors hover:underline">
-                                    <Link to="#">About Information Technology</Link>
+                                    <Link to="/students">Students</Link>
+                                </li>
+
+                                <li className="font-medium transition-colors hover:underline">
+                                    <Link to="/news">News</Link>
                                 </li>
                             </ul>
 
@@ -100,16 +104,21 @@ const Footer = () => {
 
                             <ul className="space-y-4">
                                 <li className="font-medium transition-colors hover:underline">
-                                    <Link to="#">Facebook</Link>
+                                    <Link to="https://www.facebook.com/plv.ceit">Facebook - PLV CEIT</Link>
                                 </li>
 
                                 <li className="font-medium transition-colors hover:underline">
-                                    <Link to="#">Instagram</Link>
+                                    <Link to="https://www.facebook.com/plv.aces"> Facebook - ACES </Link>
                                 </li>
 
                                 <li className="font-medium transition-colors hover:underline">
-                                    <Link to="#">LinkedIn</Link>
+                                    <Link to="https://www.facebook.com/PLVAEES2004"> Facebook - AEES </Link>
                                 </li>
+
+                                <li className="font-medium transition-colors hover:underline">
+                                    <Link to="https://www.facebook.com/ValenzuelaITSociety"> Facebook - VITS </Link>
+                                </li>
+                                
                             </ul>
 
                         </div>
@@ -123,7 +132,7 @@ const Footer = () => {
                         <p> © 2025 Copyright. All rights reserved. </p>
 
                         {/* Bottom links */}
-                        <ul className="flex gap-4">
+                        {/* <ul className="flex gap-4">
                             <li className="underline transition-colors">
                                 <Link to="#">Terms and Conditions</Link>
                             </li>
@@ -131,7 +140,7 @@ const Footer = () => {
                             <li className="underline transition-colors">
                                 <Link to="#">Privacy Policy</Link>
                             </li>
-                        </ul>
+                        </ul> */}
 
                     </div>
 

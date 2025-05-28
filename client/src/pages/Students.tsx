@@ -35,7 +35,7 @@ const Students = () => {
 
             <main className="min-h-screen">
                 {/* Hero Section */}
-                <section className="relative">
+                {/* <section className="relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/70 z-10" />
                     <img
                         src="/placeholder.svg?height=600&width=1920"
@@ -50,7 +50,7 @@ const Students = () => {
                             <p className="text-xl text-white/90 max-w-2xl">
                                 Discover resources, programs, and opportunities designed to enrich your academic journey and personal
                                 growth.
-                            </p>
+                            </p> */}
                             {/* <div className="flex flex-wrap gap-4">
               <Button size="lg" className="bg-white text-slate-900 hover:bg-white/90" asChild>
                 <Link to="#guidance">Guidance & Counselling</Link>
@@ -59,6 +59,19 @@ const Students = () => {
                 <Link to="#organizations">Student Organizations</Link>
               </Button>
             </div> */}
+                        {/* </div>
+                    </div>
+                </section> */}
+
+                {/* Hero Section - Clean and minimal */}
+                <section className="relative bg-[#f5f5f5] py-20">
+                    <div className="container mx-auto px-4">
+                        <div className="max-w-3xl">
+                            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1e1e1e]">Student life</h1>
+                            <p className="text-xl text-muted-foreground max-w-2xl">
+                                Discover resources, programs, and opportunities designed to enrich your academic journey and personal
+                                growth.
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -106,50 +119,50 @@ const Students = () => {
                                     Student Support
                                 </div> */}
                                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Guidance & Counselling</h2>
-                                <p className="text-lg text-slate-700 mb-6">
+                                <p className="text-lg text-muted-foreground mb-6">
                                     Our Guidance and Counselling Center provides comprehensive support services to help you navigate
                                     academic challenges, personal concerns, and career decisions throughout your university journey.
                                 </p>
                                 <div className="space-y-4 mb-8">
                                     <div className="flex items-start gap-3">
                                         <div className="mt-1 bg-slate-100 p-2 rounded-full">
-                                            <HeartHandshake className="h-5 w-5 text-slate-700" />
+                                            <HeartHandshake className="h-5 w-5 text-muted-foreground" />
                                         </div>
                                         <div>
                                             <h3 className="font-semibold text-lg">Personal Counselling</h3>
-                                            <p className="text-slate-600">
+                                            <p className="text-muted-foreground">
                                                 Confidential one-on-one sessions to address personal concerns and emotional well-being.
                                             </p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <div className="mt-1 bg-slate-100 p-2 rounded-full">
-                                            <BookOpen className="h-5 w-5 text-slate-700" />
+                                            <BookOpen className="h-5 w-5 text-muted-foreground" />
                                         </div>
                                         <div>
                                             <h3 className="font-semibold text-lg">Academic Guidance</h3>
-                                            <p className="text-slate-600">
+                                            <p className="text-muted-foreground">
                                                 Support for academic challenges, study skills, and educational planning.
                                             </p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <div className="mt-1 bg-slate-100 p-2 rounded-full">
-                                            <GraduationCap className="h-5 w-5 text-slate-700" />
+                                            <GraduationCap className="h-5 w-5 text-muted-foreground" />
                                         </div>
                                         <div>
                                             <h3 className="font-semibold text-lg">Career Counselling</h3>
-                                            <p className="text-slate-600">
+                                            <p className="text-muted-foreground">
                                                 Assistance with career exploration, planning, and preparation for professional life.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <Button className="gap-2" asChild>
+                                {/* <Button className="gap-2" asChild>
                                     <Link to="/guidance/appointment">
                                         Schedule an Appointment <ChevronRight className="h-4 w-4" />
                                     </Link>
-                                </Button>
+                                </Button> */}
                             </div>
                             <div className="md:w-1/2 relative">
                                 <div className="absolute -top-4 -left-4 w-full h-full bg-slate-200 rounded-lg"></div>
@@ -169,11 +182,11 @@ const Students = () => {
                 <section id="nstp" className="py-16 bg-slate-100">
                     <div className="container mx-auto px-4">
                         <div className="text-center max-w-3xl mx-auto mb-12">
-                            <Badge className="mb-8 bg-white" variant="outline">
+                            <Badge className="mb-8" variant="default">
                                 Required Program
                             </Badge>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">National Service Training Program (NSTP)</h2>
-                            <p className="text-lg text-slate-700">
+                            <p className="text-lg text-muted-foreground">
                                 The NSTP aims to promote civic consciousness and defense preparedness among the youth while developing
                                 their physical, moral, spiritual, intellectual, and social well-being.
                             </p>
@@ -182,10 +195,10 @@ const Students = () => {
                         <div className="grid md:grid-cols-3 gap-8 mb-12">
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
                                 <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-6">
-                                    <Users className="h-6 w-6 text-slate-700" />
+                                    <Users className="h-6 w-6 text-muted-foreground" />
                                 </div>
                                 <h3 className="text-xl font-bold mb-3">ROTC</h3>
-                                <p className="text-slate-600 mb-4">
+                                <p className="text-muted-foreground mb-4">
                                     Reserve Officers' Training Corps focuses on military training, discipline, and leadership development.
                                 </p>
                                 <Link to="/nstp/rotc" className="text-slate-900 font-medium inline-flex items-center hover:underline">
@@ -194,10 +207,10 @@ const Students = () => {
                             </div>
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
                                 <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-6">
-                                    <HeartHandshake className="h-6 w-6 text-slate-700" />
+                                    <HeartHandshake className="h-6 w-6 text-muted-foreground" />
                                 </div>
                                 <h3 className="text-xl font-bold mb-3">CWTS</h3>
-                                <p className="text-slate-600 mb-4">
+                                <p className="text-muted-foreground mb-4">
                                     Civic Welfare Training Service focuses on activities that contribute to the general welfare and
                                     betterment of communities.
                                 </p>
@@ -207,10 +220,10 @@ const Students = () => {
                             </div>
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
                                 <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-6">
-                                    <BookOpen className="h-6 w-6 text-slate-700" />
+                                    <BookOpen className="h-6 w-6 text-muted-foreground" />
                                 </div>
                                 <h3 className="text-xl font-bold mb-3">LTS</h3>
-                                <p className="text-slate-600 mb-4">
+                                <p className="text-muted-foreground mb-4">
                                     Literacy Training Service focuses on teaching literacy and numeracy skills to communities in need.
                                 </p>
                                 <Link to="/nstp/lts" className="text-slate-900 font-medium inline-flex items-center hover:underline">
@@ -269,7 +282,7 @@ const Students = () => {
                                     Career Development
                                 </Badge>
                                 <h2 className="text-3xl md:text-4xl font-bold mb-6">On-The-Job Training (OJT)</h2>
-                                <p className="text-lg text-slate-700 mb-6">
+                                <p className="text-lg text-muted-foreground mb-6">
                                     Our OJT program provides valuable work experience in your field of study, helping you apply classroom
                                     knowledge to real-world situations and build professional connections.
                                 </p>
@@ -284,7 +297,7 @@ const Students = () => {
                                                 </div>
                                             </div>
                                             <h4 className="ml-12 font-semibold text-lg">Application & Eligibility Check</h4>
-                                            <p className="ml-12 text-slate-600">
+                                            <p className="ml-12 text-muted-foreground">
                                                 Submit your OJT application and verify your eligibility with your department.
                                             </p>
                                         </li>
@@ -295,7 +308,7 @@ const Students = () => {
                                                 </div>
                                             </div>
                                             <h4 className="ml-12 font-semibold text-lg">Company Placement</h4>
-                                            <p className="ml-12 text-slate-600">
+                                            <p className="ml-12 text-muted-foreground">
                                                 Get matched with partner companies or find your own placement with department approval.
                                             </p>
                                         </li>
@@ -306,7 +319,7 @@ const Students = () => {
                                                 </div>
                                             </div>
                                             <h4 className="ml-12 font-semibold text-lg">Training Period</h4>
-                                            <p className="ml-12 text-slate-600">
+                                            <p className="ml-12 text-muted-foreground">
                                                 Complete required hours while maintaining regular check-ins with your faculty supervisor.
                                             </p>
                                         </li>
@@ -317,7 +330,7 @@ const Students = () => {
                                                 </div>
                                             </div>
                                             <h4 className="ml-12 font-semibold text-lg">Evaluation & Completion</h4>
-                                            <p className="ml-12 text-slate-600">
+                                            <p className="ml-12 text-muted-foreground">
                                                 Submit final requirements and receive evaluation from both company and faculty supervisors.
                                             </p>
                                         </li>
@@ -371,14 +384,14 @@ const Students = () => {
                 </section>
 
                 {/* Student Organizations Section */}
-                <section id="organizations" className="py-16 bg-slate-50">
-                    <div className="container mx-auto px-4">
+                {/* <section id="organizations" className="py-16 bg-slate-50"> */}
+                    {/* <div className="container mx-auto px-4">
                         <div className="text-center max-w-3xl mx-auto mb-12">
                             <Badge className="mb-4" variant="outline">
                                 Campus Life
                             </Badge>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">Student Organizations & Activities</h2>
-                            <p className="text-lg text-slate-700">
+                            <p className="text-lg text-muted-foreground">
                                 Engage with our vibrant community through various student organizations and activities that complement
                                 your academic experience and help you develop leadership skills.
                             </p>
@@ -509,7 +522,7 @@ const Students = () => {
                                     </div>
                                 </TabsContent>
                             </Tabs>
-                        </div>
+                        </div> */}
 
                         {/* <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-8 md:p-12">
                             <div className="flex flex-col md:flex-row gap-8">
@@ -523,7 +536,7 @@ const Students = () => {
                                             </div>
                                             <div>
                                                 <h4 className="font-semibold text-lg">University Talent Show</h4>
-                                                <p className="text-slate-600 mb-1">7:00 PM • Performing Arts Center</p>
+                                                <p className="text-muted-foreground mb-1">7:00 PM • Performing Arts Center</p>
                                                 <Link
                                                     to="/events/talent-show"
                                                     className="text-slate-900 font-medium text-sm inline-flex items-center hover:underline"
@@ -539,7 +552,7 @@ const Students = () => {
                                             </div>
                                             <div>
                                                 <h4 className="font-semibold text-lg">Leadership Summit</h4>
-                                                <p className="text-slate-600 mb-1">9:00 AM • Student Union Building</p>
+                                                <p className="text-muted-foreground mb-1">9:00 AM • Student Union Building</p>
                                                 <Link
                                                     to="/events/leadership-summit"
                                                     className="text-slate-900 font-medium text-sm inline-flex items-center hover:underline"
@@ -555,7 +568,7 @@ const Students = () => {
                                             </div>
                                             <div>
                                                 <h4 className="font-semibold text-lg">Cultural Festival</h4>
-                                                <p className="text-slate-600 mb-1">11:00 AM • Main Quad</p>
+                                                <p className="text-muted-foreground mb-1">11:00 AM • Main Quad</p>
                                                 <Link
                                                     to="/events/cultural-festival"
                                                     className="text-slate-900 font-medium text-sm inline-flex items-center hover:underline"
@@ -571,7 +584,7 @@ const Students = () => {
                                 </div>
                                 <div className="md:w-1/2">
                                     <h3 className="text-2xl font-bold mb-4">Start Your Own Organization</h3>
-                                    <p className="text-slate-700 mb-6">
+                                    <p className="text-muted-foreground mb-6">
                                         Have a unique interest not represented by our current organizations? Start your own student group with
                                         the support of the Student Activities Office.
                                     </p>
@@ -579,7 +592,7 @@ const Students = () => {
                                         <AccordionItem value="item-1">
                                             <AccordionTrigger>What are the requirements?</AccordionTrigger>
                                             <AccordionContent>
-                                                <p className="text-slate-600">
+                                                <p className="text-muted-foreground">
                                                     You'll need at least 10 interested students, a faculty advisor, and a constitution outlining
                                                     your organization's purpose and structure.
                                                 </p>
@@ -588,7 +601,7 @@ const Students = () => {
                                         <AccordionItem value="item-2">
                                             <AccordionTrigger>How do I apply?</AccordionTrigger>
                                             <AccordionContent>
-                                                <p className="text-slate-600">
+                                                <p className="text-muted-foreground">
                                                     Submit an application to the Student Activities Office with your proposed organization details.
                                                     Applications are reviewed monthly by the Student Council.
                                                 </p>
@@ -597,7 +610,7 @@ const Students = () => {
                                         <AccordionItem value="item-3">
                                             <AccordionTrigger>What support will I receive?</AccordionTrigger>
                                             <AccordionContent>
-                                                <p className="text-slate-600">
+                                                <p className="text-muted-foreground">
                                                     Approved organizations receive funding allocation, meeting space, promotional support, and
                                                     leadership training for officers.
                                                 </p>
@@ -610,8 +623,8 @@ const Students = () => {
                                 </div>
                             </div>
                         </div> */}
-                    </div>
-                </section>
+                    {/* </div>
+                </section> */}
 
                 {/* Contact Section */}
                 {/* <section className="py-16 bg-white">
@@ -620,37 +633,37 @@ const Students = () => {
                             <div className="flex flex-col md:flex-row">
                                 <div className="md:w-1/2 p-8 md:p-12">
                                     <h2 className="text-2xl font-bold mb-6">Student Affairs Office</h2>
-                                    <p className="text-slate-700 mb-8">
+                                    <p className="text-muted-foreground mb-8">
                                         Have questions about student services, organizations, or programs? Our Student Affairs team is here to
                                         help.
                                     </p>
                                     <div className="space-y-4">
                                         <div className="flex items-start gap-3">
-                                            <MapPin className="h-5 w-5 text-slate-700 mt-1" />
+                                            <MapPin className="h-5 w-5 text-muted-foreground mt-1" />
                                             <div>
                                                 <h3 className="font-semibold">Location</h3>
-                                                <p className="text-slate-600">Student Union Building, Room 203</p>
+                                                <p className="text-muted-foreground">Student Union Building, Room 203</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <Calendar className="h-5 w-5 text-slate-700 mt-1" />
+                                            <Calendar className="h-5 w-5 text-muted-foreground mt-1" />
                                             <div>
                                                 <h3 className="font-semibold">Office Hours</h3>
-                                                <p className="text-slate-600">Monday-Friday: 8:00 AM - 5:00 PM</p>
+                                                <p className="text-muted-foreground">Monday-Friday: 8:00 AM - 5:00 PM</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <Phone className="h-5 w-5 text-slate-700 mt-1" />
+                                            <Phone className="h-5 w-5 text-muted-foreground mt-1" />
                                             <div>
                                                 <h3 className="font-semibold">Phone</h3>
-                                                <p className="text-slate-600">(555) 123-4567</p>
+                                                <p className="text-muted-foreground">(555) 123-4567</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3">
-                                            <Mail className="h-5 w-5 text-slate-700 mt-1" />
+                                            <Mail className="h-5 w-5 text-muted-foreground mt-1" />
                                             <div>
                                                 <h3 className="font-semibold">Email</h3>
-                                                <p className="text-slate-600">studentaffairs@university.edu</p>
+                                                <p className="text-muted-foreground">studentaffairs@university.edu</p>
                                             </div>
                                         </div>
                                     </div>

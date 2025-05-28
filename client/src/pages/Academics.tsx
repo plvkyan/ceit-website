@@ -32,7 +32,7 @@ const Academics = () => {
                     <div className="container mx-auto px-4">
                         <div className="max-w-3xl">
                             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1e1e1e]">Academics</h1>
-                            <p className="text-xl text-black max-w-2xl">
+                            <p className="text-xl text-muted-foreground max-w-2xl">
                                 Discover our programs designed to inspire, challenge, and prepare you for success in a rapidly
                                 changing world.
                             </p>
@@ -45,7 +45,7 @@ const Academics = () => {
                     <div className="max-w-3xl mx-auto mb-16 text-center">
                         <GraduationCap className="h-10 w-10 mx-auto mb-4 text-primary" />
                         <h2 className="text-3xl font-bold mb-4">Our Programs</h2>
-                        <p className="text-lg text-black">
+                        <p className="text-lg text-muted-foreground">
                             Our programs combine rigorous technical education with hands-on experience, preparing students
                             to solve complex problems and lead innovation.
                         </p>
@@ -56,9 +56,9 @@ const Academics = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                             
                             <div className="order-2 md:order-1">
-                                <div className="relative h-[300px] rounded-lg overflow-hidden">
+                                <div className="relative max-h-[400px] rounded-lg overflow-hidden">
                                     <img
-                                        src="/placeholder.svg?height=300&width=500"
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748385301/CE_Documentation_kf6dsq.png"
                                         alt="Civil engineering students working on a bridge design project"
 
                                         className="object-cover"
@@ -68,7 +68,7 @@ const Academics = () => {
 
                             <div className="order-1 md:order-2">
                                 <h3 className="text-2xl font-semibold mb-4">Civil Engineering</h3>
-                                <p className="text-black mb-6">
+                                <p className="text-muted-foreground mb-6">
                                     Our Civil Engineering program prepares students to design, build, and maintain the infrastructure that
                                     supports modern society—from bridges and buildings to water systems and transportation networks.
                                 </p>
@@ -105,9 +105,9 @@ const Academics = () => {
                                     </div>
                                 </div>
 
-                                <Button className="bg-primary hover:bg-[#6a102b]" asChild>
+                                {/* <Button className="bg-primary hover:bg-[#6a102b]" asChild>
                                     <Link to="/academics/engineering/civil">Explore Civil Engineering</Link>
-                                </Button>
+                                </Button> */}
                             </div>
                             
                         </div>
@@ -116,10 +116,9 @@ const Academics = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                             <div className="order-1">
                                 <h3 className="text-2xl font-semibold mb-4">Electrical Engineering</h3>
-                                <p className="text-black mb-6">
+                                <p className="text-muted-foreground mb-6">
                                     Our Electrical Engineering program focuses on the study and application of electricity, electronics, and
-                                    electromagnetism, preparing students for careers in power systems, telecommunications, and electronics
-                                    design.
+                                    electromagnetism, preparing students for careers in power systems, electronics design, and more.
                                 </p>
 
                                 <div className="space-y-4 mb-6">
@@ -144,27 +143,17 @@ const Academics = () => {
                                             <p className="text-sm text-[#666666]">Circuit design, microprocessors, and control systems</p>
                                         </div>
                                     </div>
-
-                                    <div className="flex items-start">
-                                        <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
-                                            ✓
-                                        </div>
-                                        <div>
-                                            <span className="font-medium">Telecommunications</span>
-                                            <p className="text-sm text-[#666666]">Wireless systems, networking, and signal processing</p>
-                                        </div>
-                                    </div>
                                 </div>
 
-                                <Button className="bg-primary hover:bg-[#6a102b]" asChild>
+                                {/* <Button className="bg-primary hover:bg-[#6a102b]" asChild>
                                     <Link to="/academics/engineering/electrical">Explore Electrical Engineering</Link>
-                                </Button>
+                                </Button> */}
                             </div>
 
                             <div className="order-2">
-                                <div className="relative h-[300px] rounded-lg overflow-hidden">
+                                <div className="relative max-h-[400px] rounded-lg overflow-hidden">
                                     <img
-                                        src="/placeholder.svg?height=300&width=500"
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748394370/EE_Documentation_ygjr4s.jpg"
                                         alt="Electrical engineering laboratory with students working on circuit design"
 
                                         className="object-cover"
@@ -177,7 +166,7 @@ const Academics = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                             <div className="order-1 md:order-2">
                                 <h3 className="text-2xl font-semibold mb-4">Information Technology</h3>
-                                <p className="text-black mb-6">
+                                <p className="text-muted-foreground mb-6">
                                     Our Information Technology program equips students with the skills to design, implement, and manage
                                     computing systems and networks that power modern organizations.
                                 </p>
@@ -214,18 +203,18 @@ const Academics = () => {
                                     </div>
                                 </div>
 
-                                <Button className="bg-primary hover:bg-[#6a102b]" asChild>
+                                {/* <Button className="bg-primary hover:bg-[#6a102b]" asChild>
                                     <Link to="/academics/engineering/information-technology">Explore Information Technology</Link>
-                                </Button>
+                                </Button> */}
                             </div>
 
                             <div className="order-2 md:order-1">
-                                <div className="relative h-[300px] rounded-lg overflow-hidden">
+                                <div className="relative h-[400px] max-h-[400px] rounded-lg overflow-hidden">
                                     <img
-                                        src="/placeholder.svg?height=300&width=500"
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748393867/IT_Documentation_dz7541.jpg"
                                         alt="IT students collaborating on a software development project"
 
-                                        className="object-cover"
+                                        className="h-[400px] object-cover object-left-top"
                                     />
                                 </div>
                             </div>
@@ -294,13 +283,13 @@ const Academics = () => {
                             <Separator className="mb-6" />
 
                             <div className="space-y-6">
-                                <p className="text-black text-base">
+                                <p className="text-muted-foreground text-base">
                                     The Registrar's Office maintains academic records, coordinates course registration, and ensures the
                                     integrity of academic policies and procedures.
                                 </p>
 
                                 <div className="bg-[#f8f8f8] p-6 rounded-lg">
-                                    <h3 className="text-lg font-medium mb-4">Services</h3>
+                                    <h3 className="text-lg font-semibold mb-4">Services</h3>
                                     <ul className="space-y-3">
                                         <li className="flex">
                                             <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
@@ -335,21 +324,21 @@ const Academics = () => {
                                     </ul>
                                 </div>
 
-                                <div className="flex flex-col sm:flex-row gap-4">
+                                {/* <div className="flex flex-col sm:flex-row gap-4">
                                     <Button className="bg-primary hover:bg-[#6a102b]" asChild>
-                                        <Link to="/academics/registrar/student-portal">Student Portal</Link>
+                                        <Link to="/academics/registrar/student-portal"> Office </Link>
                                     </Button>
                                     <Button variant="outline" asChild>
                                         <Link to="/academics/registrar/forms">Forms & Resources</Link>
                                     </Button>
-                                </div>
+                                </div> */}
 
                                 <div className="mt-4 text-sm text-[#666666]">
                                     <p className="font-medium">Contact Information:</p>
-                                    <p>Phone: (555) 123-4567</p>
-                                    <p>Email: registrar@university.edu</p>
-                                    <p>Location: Administration Building, Room 102</p>
-                                    <p>Hours: Monday-Friday, 8:30 AM - 5:00 PM</p>
+                                    <p>Telephone: 8352 7000 local 125 </p>
+                                    <p>Email: registrarsoffice_plv@yahoo.com </p>
+                                    <p>Location: Maysan Road corner Tongco Street, Maysan, Valenzuela City, Valenzuela, Philippines </p>
+                                    <p>Hours: Monday-Friday, 8:00 AM - 5:00 PM </p>
                                 </div>
                             </div>
                         </div>
@@ -359,11 +348,11 @@ const Academics = () => {
                 {/* Academic Calendar - Minimalist design */}
 
                 {/* Faculty and Research - Simple design */}
-                <section className="py-16 bg-[#f5f5f5]">
+                {/* <section className="py-16 bg-[#f5f5f5]">
                     <div className="container mx-auto px-4">
                         <div className="max-w-3xl mx-auto mb-12 text-center">
                             <h2 className="text-3xl font-bold mb-4">Faculty & Research</h2>
-                            <p className="text-lg text-black">
+                            <p className="text-lg text-muted-foreground">
                                 Our distinguished faculty are leaders in their fields, conducting groundbreaking research and providing
                                 exceptional mentorship to students.
                             </p>
@@ -380,7 +369,7 @@ const Academics = () => {
                                     />
                                 </div>
                                 <h3 className="text-xl font-semibold mb-2">Civil Engineering Research</h3>
-                                <p className="text-black mb-4">
+                                <p className="text-muted-foreground mb-4">
                                     Our faculty are pioneering sustainable infrastructure solutions, resilient design for natural disasters,
                                     and advanced materials for construction.
                                 </p>
@@ -402,7 +391,7 @@ const Academics = () => {
                                     />
                                 </div>
                                 <h3 className="text-xl font-semibold mb-2">Electrical Engineering Research</h3>
-                                <p className="text-black mb-4">
+                                <p className="text-muted-foreground mb-4">
                                     Research initiatives include renewable energy systems, advanced semiconductor devices, and
                                     next-generation wireless communications.
                                 </p>
@@ -424,7 +413,7 @@ const Academics = () => {
                                     />
                                 </div>
                                 <h3 className="text-xl font-semibold mb-2">IT Research Initiatives</h3>
-                                <p className="text-black mb-4">
+                                <p className="text-muted-foreground mb-4">
                                     Our IT faculty lead research in artificial intelligence, cybersecurity, cloud computing, and
                                     human-computer interaction.
                                 </p>
@@ -434,10 +423,10 @@ const Academics = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 {/* FAQ Section - Clean and minimal */}
-                <section className="py-16 container mx-auto px-4">
+                {/* <section className="py-16 container mx-auto px-4">
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-2xl font-semibold mb-8 text-center">Frequently Asked Questions</h2>
 
@@ -517,7 +506,7 @@ const Academics = () => {
                             </AccordionItem>
                         </Accordion>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Contact Section - Simple and clean */}
                 {/* <section className="py-16 bg-[#f5f5f5]">
