@@ -2,7 +2,7 @@
 import { ArrowRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 interface Feature {
   title: string;
@@ -87,10 +87,12 @@ const AnnouncementsFeature = ({
         </div>
 
         <div className="flex flex-col items-end gap-6">
-          <Button variant="ghost" className="font-bold text-primary uppercase hover:bg-muted/50 hover:text-primary">
-            View all news
-            <ArrowRight />
-          </Button>
+          <Link to="/news">
+            <Button variant="ghost" className="font-bold text-primary uppercase hover:bg-muted/50 hover:text-primary">
+              View all news
+              <ArrowRight />
+            </Button>
+          </Link>
         </div>
 
       </div>
