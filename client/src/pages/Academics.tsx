@@ -6,6 +6,8 @@ import Footer from "@/components/ui/footer";
 // Navigation bar component import
 import NavigationBar from "@/components/ui/navigation-bar";
 
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+
 import { Link } from "react-router-dom"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
@@ -54,7 +56,7 @@ const Academics = () => {
                     <div className="space-y-20">
                         {/* Civil Engineering */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                            
+
                             <div className="order-2 md:order-1">
                                 <div className="relative max-h-[400px] rounded-lg overflow-hidden">
                                     <img
@@ -109,7 +111,7 @@ const Academics = () => {
                                     <Link to="/academics/engineering/civil">Explore Civil Engineering</Link>
                                 </Button> */}
                             </div>
-                            
+
                         </div>
 
                         {/* Electrical Engineering */}
@@ -275,7 +277,7 @@ const Academics = () => {
                             </div>
                         </div> */}
 
-                        <div className="md:col-span-2">
+                        <div className="md:col-span-2 ">
                             <div className="flex items-center mb-6">
                                 <FileText className="h-6 w-6 mr-3 text-primary" />
                                 <h2 className="text-2xl font-semibold">Registrar's Office</h2>
@@ -309,12 +311,12 @@ const Academics = () => {
                                             </div>
                                             <span>Degree Verification</span>
                                         </li>
-                                        <li className="flex">
+                                        {/* <li className="flex">
                                             <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
                                                 ✓
                                             </div>
                                             <span>Academic Calendar Management</span>
-                                        </li>
+                                        </li> */}
                                         <li className="flex">
                                             <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 mt-0.5">
                                                 ✓
@@ -342,6 +344,87 @@ const Academics = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                <section className="py-16 pb-24 container mx-auto px-4">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-slate-900 mb-4">College Leadership</h2>
+                        <p className="text-slate-600 max-w-2xl mx-auto">
+                            Meet the dedicated leaders who guide our College of Engineering and Information Technology.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-row flex-wrap gap-6">
+                        <Card className="text-center shadow-none border-none w-[100%] sm:w-[33%] grow">
+                            <CardHeader>
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden bg-slate-100">
+                                    <img
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748378470/Dr-Neden%CC%83a-C-Torralba_University-President_vlnf56.jpg"
+                                        alt="Dr. Nedeña C. Torralba"
+                                        className="w-full h-full object-cover object-top"
+                                    />
+                                </div>
+                                <CardTitle className="text-lg">Dr. Nedeña C. Torralba</CardTitle>
+                                <CardDescription>University President</CardDescription>
+                            </CardHeader>
+                        </Card>
+
+                        <Card className="text-center border-none shadow-none w-[100%] sm:w-[33%] grow">
+                            <CardHeader>
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden bg-slate-100">
+                                    <img
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748378470/Engr-Jordan-N-Velasco_Dean-College-of-Engineering-and-Information-Technology_dfsqeu.jpg"
+                                        alt="Engr. Jordan N. Velasco"
+                                        className="w-full h-full object-cover object-top"
+                                    />
+                                </div>
+                                <CardTitle className="text-lg">Engr. Jordan N. Velasco</CardTitle>
+                                <CardDescription>Dean, College of Engineering and Information Technology</CardDescription>
+                            </CardHeader>
+                        </Card>
+
+                        <Card className="text-center border-none shadow-none w-[100%] sm:w-[33%] grow">
+                            <CardHeader>
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden bg-slate-100">
+                                    <img
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748378470/Dr-Nelda-Gene-C-Mariano_Vice-President-for-Academic-Affairs_yrychl.jpg"
+                                        alt="Dr. Nelda Gene C. Mariano"
+                                        className="w-full h-full object-cover object-top"
+                                    />
+                                </div>
+                                <CardTitle className="text-lg">Dr. Nelda Gene C. Mariano</CardTitle>
+                                <CardDescription>Vice President for Academic Affairs</CardDescription>
+                            </CardHeader>
+                        </Card>
+
+                        <Card className="text-center border-none shadow-none w-[100%] sm:w-[33%] grow">
+                            <CardHeader>
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden bg-slate-100">
+                                    <img
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748378470/Dr-John-Cabaddu_Vice-President-for-Administration_fm0rov.jpg"
+                                        alt="Dr. John Cabaddu"
+                                        className="w-full h-full object-cover object-top"
+                                    />
+                                </div>
+                                <CardTitle className="text-lg">Dr. John Cabaddu</CardTitle>
+                                <CardDescription>Vice President for Administration</CardDescription>
+                            </CardHeader>
+                        </Card>
+
+                        <Card className="text-center border-none shadow-none w-[100%] sm:w-[33%] grow">
+                            <CardHeader>
+                                <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden bg-slate-100">
+                                    <img
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748378470/Norie-Caunda_Secretary-College-of-Engineering-and-Information-Technology_urnqjl.jpg"
+                                        alt="Norie Caunda"
+                                        className="w-full h-full object-cover object-top"
+                                    />
+                                </div>
+                                <CardTitle className="text-lg">Norie Caunda</CardTitle>
+                                <CardDescription>Secretary, College of Engineering and Information Technology</CardDescription>
+                            </CardHeader>
+                        </Card>
                     </div>
                 </section>
 

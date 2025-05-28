@@ -165,9 +165,9 @@ const Students = () => {
                                 </Button> */}
                             </div>
                             <div className="md:w-1/2 relative">
-                                <div className="absolute -top-4 -left-4 w-full h-full bg-slate-200 rounded-lg"></div>
+                                <div className="absolute top-0 left-0 w-full h-full bg-slate-100 rounded-lg"></div>
                                 <img
-                                    src="/placeholder.svg?height=500&width=600"
+                                    src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748395994/Guidance_Counselling_hvxjg0.jpg"
                                     width={600}
                                     height={500}
                                     alt="Counselling session"
@@ -201,9 +201,9 @@ const Students = () => {
                                 <p className="text-muted-foreground mb-4">
                                     Reserve Officers' Training Corps focuses on military training, discipline, and leadership development.
                                 </p>
-                                <Link to="/nstp/rotc" className="text-slate-900 font-medium inline-flex items-center hover:underline">
+                                {/* <Link to="/nstp/rotc" className="text-slate-900 font-medium inline-flex items-center hover:underline">
                                     Learn more <ChevronRight className="h-4 w-4 ml-1" />
-                                </Link>
+                                </Link> */}
                             </div>
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
                                 <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-6">
@@ -214,9 +214,9 @@ const Students = () => {
                                     Civic Welfare Training Service focuses on activities that contribute to the general welfare and
                                     betterment of communities.
                                 </p>
-                                <Link to="/nstp/cwts" className="text-slate-900 font-medium inline-flex items-center hover:underline">
+                                {/* <Link to="/nstp/cwts" className="text-slate-900 font-medium inline-flex items-center hover:underline">
                                     Learn more <ChevronRight className="h-4 w-4 ml-1" />
-                                </Link>
+                                </Link> */}
                             </div>
                             <div className="bg-white p-8 rounded-lg shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
                                 <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mb-6">
@@ -226,9 +226,9 @@ const Students = () => {
                                 <p className="text-muted-foreground mb-4">
                                     Literacy Training Service focuses on teaching literacy and numeracy skills to communities in need.
                                 </p>
-                                <Link to="/nstp/lts" className="text-slate-900 font-medium inline-flex items-center hover:underline">
+                                {/* <Link to="/nstp/lts" className="text-slate-900 font-medium inline-flex items-center hover:underline">
                                     Learn more <ChevronRight className="h-4 w-4 ml-1" />
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
 
@@ -341,18 +341,18 @@ const Students = () => {
                             <div className="md:w-1/2">
                                 <div className="grid grid-cols-2 gap-4">
                                     <img
-                                        src="/placeholder.svg?height=300&width=300"
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748397544/IT_OJT-Documentation-1_mji2xv.jpg"
                                         width={300}
                                         height={300}
                                         alt="Student in office environment"
                                         className="rounded-lg w-full h-auto"
                                     />
                                     <img
-                                        src="/placeholder.svg?height=300&width=300"
+                                        src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748397545/EE_OJT-Documentation-1_vct3kl.jpg"
                                         width={300}
                                         height={300}
                                         alt="Students in training"
-                                        className="rounded-lg w-full h-auto mt-8"
+                                        className="rounded-lg w-full h-auto object-cover mt-8"
                                     />
                                     <img
                                         src="/placeholder.svg?height=300&width=300"
@@ -372,13 +372,13 @@ const Students = () => {
                             </div>
                         </div>
 
-                        <div className="w-full flex justify-center mt-12">
+                        {/* <div className="w-full flex justify-center mt-12">
                             <Button className="gap-2" asChild>
                                 <Link to="/ojt/opportunities">
                                     Browse OJT Opportunities <ChevronRight className="h-4 w-4" />
                                 </Link>
                             </Button>
-                        </div>
+                        </div> */}
 
                     </div>
                 </section>
