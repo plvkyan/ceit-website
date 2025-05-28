@@ -87,7 +87,7 @@ const Hero = () => {
                             </div>
                         </CarouselItem>
 
-                        <CarouselItem className="pl-0">
+                        <CarouselItem className="pl-0" onClick={() => navigate("/news/ceit-shines-bright-at-plv-intramurals-2025")}>
                             <div className="relative flex w-full items-center justify-center">
                                 <div className="flex absolute items-center justify-center top-0 left-0 ms-auto me-auto w-full h-full z-50 bg-plvblue/60">
                                     <div className="container mt-32 md:mt-56 flex flex-col sm:gap-4 w-[100%] px-12 sm:px-16">
@@ -111,7 +111,7 @@ const Hero = () => {
                             </div>
                         </CarouselItem>
                         
-                        <CarouselItem className="pl-0">
+                        <CarouselItem className="pl-0" onClick={() => navigate("/news/plv-ceit-celebrates-new-civil-engineer-board-passers")}>
                             <div className="relative flex w-full items-center justify-center">
                                 <div className="flex absolute items-center justify-center top-0 left-0 ms-auto me-auto w-full h-full z-50 bg-plvblue/60">
                                     <div className="container mt-32 md:mt-56 flex flex-col sm:gap-4 w-[100%] px-12 sm:px-16">

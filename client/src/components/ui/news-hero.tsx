@@ -121,7 +121,7 @@ const NewsHero = () => {
             <div className="hidden w-28 shrink-0 bg-[radial-gradient(var(--muted-foreground)_1px,transparent_1px)] [background-size:10px_10px] opacity-15 xl:block"></div>
             <div className="grid lg:grid-cols-2">
               <Link
-                to="/news/12349"
+                to="/news/plv-ceit-celebrates-new-civil-engineer-board-passers"
                 className="group flex flex-col justify-between gap-12 border-border bg-background px-6 py-8 transition-colors duration-500 ease-out hover:bg-muted/40 md:py-16 lg:pb-16 xl:gap-16 xl:border-l xl:pl-8"
               >
                 <div className="flex items-center gap-2 text-2xl font-medium">
@@ -152,7 +152,7 @@ const NewsHero = () => {
               </Link>
 
               <Link
-                to="/news/12349"
+                to="/news/ceit-shines-bright-at-plv-intramurals-2025"
                 className="group flex flex-col justify-between gap-12 border-t border-border bg-background px-6 py-8 transition-colors duration-500 ease-out hover:bg-muted/40 md:py-16 lg:border-t-0 lg:border-l lg:pb-16 xl:gap-16 xl:border-r xl:pl-8"
               >
                 <div className="flex items-center gap-2 text-2xl font-medium">

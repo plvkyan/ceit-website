@@ -37,12 +37,14 @@ import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgotPassword';
 import { Toaster } from "@/components/ui/sonner"
 import Dashboard from './pages/Dashboard';
-import NewsPage1 from './components/ui/news-page';
+import NewsPage1 from './components/ui/news-page-1';
 import CreateNews from './pages/CreateNews';
 import EmailVerification from './pages/EmailVerification';
 import Sample from './pages/Sample';
 
 import { TooltipProvider } from "@/components/ui/tooltip"
+import NewsPage2 from './components/ui/news-page-2';
+import NewsPage3 from './components/ui/news-page-3';
 
 
 const router = createBrowserRouter([
@@ -63,14 +65,14 @@ const router = createBrowserRouter([
     path: "/students",
     element: <Students />,
   },
-  {
-    path: "/community",
-    element: <Community />,
-  },
-  {
-    path: "/facilities",
-    element: <Facilities />,
-  },
+  // {
+  //   path: "/community",
+  //   element: <Community />,
+  // },
+  // {
+  //   path: "/facilities",
+  //   element: <Facilities />,
+  // },
   {
     path: "/news",
     element: <News />,
@@ -81,33 +83,43 @@ const router = createBrowserRouter([
     element: <NewsPage1 />,
   },
   {
-    path: "/login",
-    element: <Login />,
+    path: "/news/plv-ceit-celebrates-new-civil-engineer-board-passers",
+    // This is a specific news page, you can add more as needed
+    element: <NewsPage2 />,
   },
   {
-    path: "/signup",
-    element: <SignUp />,
+    path: "/news/ceit-shines-bright-at-plv-intramurals-2025",
+    // This is a specific news page, you can add more as needed
+    element: <NewsPage3 />,
   },
-  {
-    path: "/forgot",
-    element: <ForgotPassword />,
-  },
-  {
-    path: "/email-verification",
-    element: <EmailVerification />,
-  },
-  {
-    path: "/dashboard",
-    element: <Dashboard />,
-  },
-  {
-    path: "/create-news",
-    element: <CreateNews  />,
-  },
-  {
-    path: "/sample",
-    element: <Sample />,
-  },
+  // {
+  //   path: "/login",
+  //   element: <Login />,
+  // },
+  // {
+  //   path: "/signup",
+  //   element: <SignUp />,
+  // },
+  // {
+  //   path: "/forgot",
+  //   element: <ForgotPassword />,
+  // },
+  // {
+  //   path: "/email-verification",
+  //   element: <EmailVerification />,
+  // },
+  // {
+  //   path: "/dashboard",
+  //   element: <Dashboard />,
+  // },
+  // {
+  //   path: "/create-news",
+  //   element: <CreateNews  />,
+  // },
+  // {
+  //   path: "/sample",
+  //   element: <Sample />,
+  // },
 ]);
 
 createRoot(document.getElementById('root')!).render(

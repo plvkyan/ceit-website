@@ -42,7 +42,7 @@ const Error404: React.FC = () => {
   // Functions
   // Navigate back to a page function
   const navigateBack = () => {
-    navigate('/home');
+    history.back();
   }
 
   return (
@@ -87,7 +87,7 @@ const Error404: React.FC = () => {
 
       <div className="flex flex-col gap-2 items-center md:items-start text-center text-wrap">
         <h1 className={"text-4xl md:text-6xl"}> 404</h1>
-        <p className="text-xs md:text-base text-wrap text-muted-foreground max-w-[80%]"> Oops. The page you're looking for doesn't exist. </p>
+        <p className="text-xs md:text-base text-wrap text-muted-foreground max-w-[80%] md:max-w-[100%]"> Oops. The page you're looking for doesn't exist. </p>
         <Button className="my-6 md:my-4 text-xs md:text-sm font-normal" onClick={navigateBack} size="sm" variant="outline"> Let's go back </Button>
       </div>
 

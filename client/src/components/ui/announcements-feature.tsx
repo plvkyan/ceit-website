@@ -28,11 +28,13 @@ const AnnouncementsFeature = ({
       title: "CEIT Shines Bright at PLV Intramurals 2025",
       description:
         "The PLV Intramurals 2025 officially wrapped up last April 21, bringing weeks of excitement, camaraderie, and competitive spirit across various sports.",
+      link: "/news/ceit-shines-bright-at-plv-intramurals-2025"
     },
     {
       title: "PLV CEIT Celebrates New Civil Engineer Board Passers",
       description:
         "The College of Engineering and Information Technology proudly celebrates the success of its recent Civil Engineering graduates who passed the April 2025 Civil Engineering Licensure Examination.",
+      link: "/news/plv-ceit-celebrates-new-civil-engineer-board-passers"
     },
   ],
 }: AnnouncementsFeatureProps) => {
