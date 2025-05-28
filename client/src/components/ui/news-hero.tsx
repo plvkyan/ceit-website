@@ -92,10 +92,10 @@ const NewsHero = () => {
                   NON-ACADEMIC / INTRAMURALS
                 </span>
                 <h2 className="mt-4 mb-5 text-2xl font-semibold text-balance sm:text-3xl sm:leading-10">
-                  The IT Department wins the Badminton silver medal.
+                  April Joy Yapcengco Ends Her Run with Grace, Grit, and Glory.
                   <span className="font-medium text-primary/50 transition-colors duration-500 ease-out group-hover:text-primary/100">
                     {" "}
-                    IT dominates this year's Intramurals.
+                     A Final Intramurals for the PLV Star
                   </span>
                 </h2>
                 <div className="flex items-center gap-2 font-medium">
@@ -108,9 +108,9 @@ const NewsHero = () => {
               <div className="relative isolate h-full border border-border bg-background p-2">
                 <div className="h-full overflow-hidden">
                   <img
-                    src="https://res.cloudinary.com/dmodbgukj/image/upload/v1746598003/IT_Badminton-Silver-Medalist_dmdzlx.jpg"
+                    src="https://res.cloudinary.com/dmodbgukj/image/upload/v1748381950/Yapcengco_PLV-Intramurals-2023-Championship_q9jjld.jpg"
                     alt="placeholder"
-                    className="aspect-[14/9] h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                    className="aspect-[14/9] h-full w-full object-cover transition-transform duration-500 ease-out object-bottom group-hover:scale-105"
                   />
                 </div>
               </div>
@@ -137,7 +137,7 @@ const NewsHero = () => {
                     ACADEMIC / ALUMNI
                   </span>
                   <h2 className="mt-4 mb-5 text-2xl font-semibold text-balance sm:text-3xl sm:leading-10">
-                    PLV celebrates engineering excellence yet again.
+                    PLV CEIT Celebrates New Civil Engineer Board Passers.
                     <span className="font-medium text-primary/50 transition-colors duration-500 ease-out group-hover:text-primary/100">
                       {" "}
                       Forty alumni passes their licensure exam.
@@ -168,10 +168,10 @@ const NewsHero = () => {
                     ACADEMIC / ITLYMPICS
                   </span>
                   <h2 className="mt-4 mb-5 text-2xl font-semibold text-balance sm:text-3xl sm:leading-10">
-                    BSIT 4-2 wins ITlympics 2025.
+                    CEIT Shines Bright at PLV Intramurals 2025.
                     <span className="font-medium text-primary/50 transition-colors duration-500 ease-out group-hover:text-primary/100">
                       {" "}
-                      Seniors snag victory and leave a legacy.
+                      PLV Intramurals 2025: A Celebration of Spirit and Sportsmanship
                     </span>
                   </h2>
                   <div className="flex items-center gap-2 font-medium">
@@ -181,39 +181,6 @@ const NewsHero = () => {
                 </div>
               </Link>
 
-              {news && news.map((singleNews) => (
-                <Link
-                  to="/news/12349"
-                  className="group flex flex-col justify-between gap-12 border-t border-border bg-background px-6 py-8 transition-colors duration-500 ease-out hover:bg-muted/40 md:py-16 lg:border-t-0 lg:border-l lg:pb-16 xl:gap-16 xl:border-r xl:pl-8"
-                  key={singleNews._id}
-                >
-                  <div className="flex items-center gap-2 text-2xl font-medium">
-                    {/* <img
-                    src="https://shadcnblocks.com/images/block/block-3.svg"
-                    alt="logo"
-                    className="h-9"
-                  /> */}
-                    <BookOpen className="h-9" />
-                    Must read
-                  </div>
-                  <div>
-                    <span className="text-xs text-muted-foreground sm:text-sm">
-                      ACADEMIC / ITLYMPICS
-                    </span>
-                    <h2 className="mt-4 mb-5 text-2xl font-semibold text-balance sm:text-3xl sm:leading-10">
-                      {singleNews.title}
-                      <span className="font-medium text-primary/50 transition-colors duration-500 ease-out group-hover:text-primary/100">
-                        {" "}
-                        {singleNews.content}
-                      </span>
-                    </h2>
-                    <div className="flex items-center gap-2 font-medium">
-                      Read
-                      <MoveRight className="h-4 w-4 transition-transform duration-500 ease-out group-hover:translate-x-1" />
-                    </div>
-                  </div>
-                </Link>
-              ))}
 
             </div>
             <div className="hidden w-28 shrink-0 bg-[radial-gradient(var(--muted-foreground)_1px,transparent_1px)] [background-size:10px_10px] opacity-15 xl:block"></div>

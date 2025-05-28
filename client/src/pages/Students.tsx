@@ -352,9 +352,9 @@ const Students = () => {
                                         width={300}
                                         height={300}
                                         alt="Students in training"
-                                        className="rounded-lg w-full h-auto object-cover mt-8"
+                                        className="rounded-lg w-full h-auto object-cover gmt-8"
                                     />
-                                    <img
+                                    {/* <img
                                         src="/placeholder.svg?height=300&width=300"
                                         width={300}
                                         height={300}
@@ -367,7 +367,7 @@ const Students = () => {
                                         height={300}
                                         alt="Professional workplace"
                                         className="rounded-lg w-full h-auto mt-8"
-                                    />
+                                    /> */}
                                 </div>
                             </div>
                         </div>
