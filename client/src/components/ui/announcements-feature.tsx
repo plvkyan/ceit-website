@@ -2,6 +2,7 @@
 import { ArrowRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 interface Feature {
   title: string;
@@ -21,6 +22,7 @@ const AnnouncementsFeature = ({
       title: "April Joy Yapcengco Ends Her Run with Grace, Grit, and Glory.",
       description:
         "The Pamantasan ng Lungsod ng Valenzuela's courts bids a triumphant and emotional farewell to one of its most iconic athletes—April Joy Yapcengco.",
+      link: "/news/april-joy-yapcengco-ends-her-run-with-grace-grit-and-glory"
     },
     {
       title: "CEIT Shines Bright at PLV Intramurals 2025",
@@ -34,6 +36,9 @@ const AnnouncementsFeature = ({
     },
   ],
 }: AnnouncementsFeatureProps) => {
+
+  const navigate = useNavigate();
+
   return (
 
     <section className="flex items-center justify-center py-32 px-8">
@@ -65,6 +70,7 @@ const AnnouncementsFeature = ({
               <div
                 key={index}
                 className="flex grow basis-0 flex-col rounded-md bg-background p-4 cursor-pointer"
+                {...(feature.link ? { onClick: () => navigate(feature.link!) } : {})}
               >
                 <h3 className="mb-2 text-2xl line-clamp-2 font-semibold">{feature.title}</h3>
                 <p className="text-sm line-clamp-3 text-muted-foreground italic">

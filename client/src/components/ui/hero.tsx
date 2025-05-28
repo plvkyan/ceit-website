@@ -89,7 +89,7 @@ const Hero = () => {
 
                         <CarouselItem className="pl-0">
                             <div className="relative flex w-full items-center justify-center">
-                                <div className="flex absolute items-center justify-center top-0 left-4 ms-auto me-auto w-full h-full z-50 bg-plvblue/60">
+                                <div className="flex absolute items-center justify-center top-0 left-0 ms-auto me-auto w-full h-full z-50 bg-plvblue/60">
                                     <div className="container mt-32 md:mt-56 flex flex-col sm:gap-4 w-[100%] px-12 sm:px-16">
                                         <h1 className="z-10 line-clamp-3 text-white drop-shadow-lg text-lg md:text-pretty md:text-4xl lg:text-5xl">
                                             CEIT shines bright at PLV Intramurals 2025
@@ -113,7 +113,7 @@ const Hero = () => {
                         
                         <CarouselItem className="pl-0">
                             <div className="relative flex w-full items-center justify-center">
-                                <div className="flex absolute items-center justify-center top-0 left-4 ms-auto me-auto w-full h-full z-50 bg-plvblue/60">
+                                <div className="flex absolute items-center justify-center top-0 left-0 ms-auto me-auto w-full h-full z-50 bg-plvblue/60">
                                     <div className="container mt-32 md:mt-56 flex flex-col sm:gap-4 w-[100%] px-12 sm:px-16">
                                         <h1 className="z-10 line-clamp-3 text-white drop-shadow-lg text-lg md:text-pretty md:text-4xl lg:text-5xl">
                                             PLV CEIT celebrates new civil engineer board passers

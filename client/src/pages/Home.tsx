@@ -40,7 +40,7 @@ const Home = () => {
 
             <AnnouncementsFeature />
 
-            <LatestEventsFeature />
+            {/* <LatestEventsFeature /> */}
 
             <Footer />
 
